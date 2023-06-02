@@ -9,7 +9,7 @@ wiringpi.pinMode(PIN, wiringpi.INPUT)
 wiringpi.pullUpDnControl(PIN, wiringpi.PUD_UP)
 
 # zet MQTT broker address 
-broker_address = "borker IP"
+broker_address = "broker IP"
 
 # zet de MQTT broker username en password
 username = "user"
