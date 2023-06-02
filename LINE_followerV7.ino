@@ -1,9 +1,9 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "embed";      //    telenet-1890657
-const char* password = "weareincontrol";     //    w3dcfrejeEhk
-const char* mqttServer = "192.168.1.146";  //    192.168.0.236
+const char* ssid = "ssid";  
+const char* password = "passsword";     
+const char* mqttServer = "192.168.1.146";  
 const int mqttPort = 1883;
 const char* mqttUser = "remy";
 const char* mqttPassword = "odroid";
