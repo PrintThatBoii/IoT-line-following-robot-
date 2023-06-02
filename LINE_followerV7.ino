@@ -261,7 +261,7 @@ void motortemp() {
   client.publish("Robot/robot1/motorTemp", temp1);
   Serial.println(temp);
 
-  if (temp <= 30) {
+  if (temp >= 30) {
     carStop();
   }
 }
