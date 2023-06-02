@@ -3,10 +3,10 @@
 
 const char* ssid = "ssid";  
 const char* password = "passsword";     
-const char* mqttServer = "192.168.1.146";  
+const char* mqttServer = "server IP";  
 const int mqttPort = 1883;
-const char* mqttUser = "remy";
-const char* mqttPassword = "odroid";
+const char* mqttUser = "username";
+const char* mqttPassword = "user password";
 const char* clientID = "client_livingroom";  // MQTT client ID
 
 WiFiClient espClient;
