@@ -130,8 +130,6 @@ void loop() {
     digitalWrite(geel, LOW);
     digitalWrite(rood, LOW);
     client.publish("Robot/robot1/status1", "1");
-    client.publish("Robot/robot1/statusledO", "0");
-    client.publish("Robot/robot1/statusledR", "0");
   } else if (leftV == 1 && centerV == 1 && rightV == 1) {
     carStop();
     digitalWrite(groen, LOW);
@@ -160,7 +158,6 @@ void loop() {
     digitalWrite(geel, LOW);
     digitalWrite(rood, HIGH);
     client.publish("Robot/robot1/status", "404");
-    client.publish("Robot/robot1/statusledR", "1");
   } else if (leftV == 1 && centerV == 1 && rightV == 0) {
     carturnleft();
   } else if (leftV == 0 && centerV == 1 && rightV == 1) {
@@ -225,7 +222,6 @@ void Ultrasone() {
     carStop();
     digitalWrite(geel, HIGH);
     client.publish("Robot/robot1/status4", "3");
-    client.publish("Robot/robot1/statusledO", "1");
     delay(500);
   } else {
     digitalWrite(geel, LOW);
