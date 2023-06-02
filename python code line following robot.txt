@@ -18,7 +18,7 @@ password = "password"
 # maak een MQTT client
 client = mqtt.Client()
 
-# zet de MQTT broeker username en password
+# zet de MQTT broker username en password
 client.username_pw_set(username, password)
 
 # connecteer met de MQTT broker
